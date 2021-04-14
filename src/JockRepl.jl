@@ -1,5 +1,17 @@
 using Pkg
+using ImageView, Images
 include("JockeyEditor.jl")
+function jockey_open(param::AbstractString)
+    filext = split(param, " ")[2]
+    if fileext in [".jpg", ".png"]
+        img = load(param)
+        imshow(img)
+    elseif fileext in [".txt", ".jl", ".py", ".sh"]
+        println("Text editor not yet available! :(")
+    elseif fileext == ".ipynb"
+        println("Notebook view not yet available :(")
+    end
+end
 function parse_bash_command(s)
     dims = split(s, " ")
     command = dims[1]
@@ -18,6 +30,8 @@ function parse_bash_command(s)
         mkdir(param)
     elseif command == "source"
         Pkg.activate(param)
+    elseif command == "open"
+        jockey_open(param)
     else
         try
             run(Cmd(s))
