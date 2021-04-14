@@ -3,12 +3,12 @@ using ImageView, Images
 include("JockeyEditor.jl")
 function jockey_open(param::AbstractString)
     filext = split(param, ".")[2]
-    if fileext in [".jpg", ".png"]
+    if filext in ["jpg", "png"]
         img = load(param)
         imshow(img)
-    elseif fileext in [".txt", ".jl", ".py", ".sh"]
+    elseif filext in ["txt", "jl", "py", "sh"]
         println("Text editor not yet available! :(")
-    elseif fileext == ".ipynb"
+    elseif filext == "ipynb"
         println("Notebook view not yet available :(")
     end
 end
