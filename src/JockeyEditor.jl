@@ -1,0 +1,3 @@
+module JockeyEditor
+
+end
