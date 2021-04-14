@@ -4,6 +4,7 @@ authors = ["emmett Boudreau"]
 version = "0.1.0"
 
 [deps]
+ImageIO = "82e4d734-157c-48bb-816b-45c225c6df19"
 ImageView = "86fae568-95e7-573e-a6b2-d8a6b900c9ef"
 Images = "916415d5-f1e6-5110-898d-aaa5f9f070e0"
 Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
