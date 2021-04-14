@@ -2,7 +2,7 @@ using Pkg
 using ImageView, Images
 include("JockeyEditor.jl")
 function jockey_open(param::AbstractString)
-    filext = split(param, " ")[2]
+    filext = split(param, ".")[2]
     if fileext in [".jpg", ".png"]
         img = load(param)
         imshow(img)
