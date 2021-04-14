@@ -1,3 +1,1 @@
-module JockeyEditor
-
-end
+s = "global variables r bad"

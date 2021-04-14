@@ -1,7 +1,6 @@
 module JockRepl
 using Pkg
 include("JockeyEditor.jl")
-using JockeyEditor
 function parse_bash_command(s)
     dims = split(s, " ")
     command = dims[1]
