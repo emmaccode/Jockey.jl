@@ -1,4 +1,3 @@
-module JockRepl
 using Pkg
 include("JockeyEditor.jl")
 function parse_bash_command(s)
@@ -57,8 +56,5 @@ function install()
                write(io, "catch\n end\n end\n")
 
     end;
-
-end
-export parse_bash_command, install
 
 end
