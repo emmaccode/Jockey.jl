@@ -1,0 +1,7 @@
+name = "Jockey"
+uuid = "93f1f98d-388d-492b-995b-8df254d9e5eb"
+authors = ["emmett Boudreau"]
+version = "0.1.0"
+
+[deps]
+Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
